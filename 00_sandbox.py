@@ -1,5 +1,4 @@
-get_number = int(input("Choose a number "))
+greeting = "hello world"
 
-times_five = get_number * 5
-
-print(times_five)
+for letter in greeting:
+    print(letter)

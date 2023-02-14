@@ -5,11 +5,13 @@ while played_before != "xxx":
     played_before = input("Have you played this game before? ").lower()
 
     # If they say yes, output 'program continues'
-    if played_before == "yes" or "y":
+    if played_before == "yes" or played_before == "y":
+        played_before = "yes"
         print("program continues")
 
     # If they say no, output 'display instructions'
-    elif played_before == "no" or "n":
+    elif played_before == "no" or played_before == "n":
+        played_before = "no"
         print("Display Instructions")
 
     # If they say something else, the code asks them to answer in yes/no
