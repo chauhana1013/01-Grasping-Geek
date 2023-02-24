@@ -10,11 +10,11 @@ def num_check(question, low, high):
 
         try:
             # Ask the question
-            response = int(input("How many points you want to play with? "))
+            response = int(input(question))
 
             # If the amount is too low / too high give
-            if 0 < response <= 10 :
-                print("You chose to play with ${}".format(response))
+            if low < response <= high :
+                return response
 
             # Out put an error
             else:
@@ -24,3 +24,6 @@ def num_check(question, low, high):
             print(error)
 
 # Main routine go here
+how_much = num_check("How much would you like to play with? ", 0, 10)
+
+print("You will be spending ${}".format(how_much))
