@@ -14,15 +14,15 @@ def yes_no(question):
         else:
             print("Please answer yes / no")
 
+
 def show_instructions():
     print("********* Instructions ***********")
     print()
     print("Rules")
     print()
 
+
 def num_check(question, low, high):
-
-
 
     error = "Hey man, choose a whole number between 1 and 10"
 
