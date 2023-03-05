@@ -1,5 +1,6 @@
-import random
+greeting = "hello world"
+sides = "*" * 3
 
-for item in range(0, 200):
-    number = random.randint(1,4)
-    print(number, end="\t")
+greeting = "{} {} {}".format(sides, greeting, sides)
+
+print(greeting)
